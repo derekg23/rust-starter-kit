@@ -98,13 +98,6 @@ Before running the application, you'll need to create a PostgreSQL database.
      GRANT ALL PRIVILEGES ON DATABASE <your-database-name> TO rust_user;
      ```
 
-#### 3. **Configure Database Connection**:
-
-   Update your `.env` file to include the PostgreSQL connection details:
-   ```dotenv
-   DATABASE_URL=postgres://rust_user:your_password@localhost/rust_starter_kit
-
-
 ### 5. Update environment file
 
 Copy .env.local to .env and update .env with your database information
