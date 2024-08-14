@@ -36,7 +36,7 @@ Follow the on-screen instructions to install Rust.
 Once Rust is installed, clone the Rust Starter Kit repository:
 
 ```bash
-git clone https://github.com/your-username/rust-starter-kit.git
+git clone https://github.com/derekg23/rust-starter-kit.git
 cd rust-starter-kit
 ```
 
