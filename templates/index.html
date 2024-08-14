@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="center">
+  <img src="/public/image/logo.png" class="logo" alt="logo" />
+  <p>Get started with Rust Starter Kit!</p>
+  <a href="https://www.rust-lang.org/learn/" target="_blank">Learn Rust</a>
+  <h2>Users</h2>
+  <table id="users" class="users">
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>
+          <button id="openModalButton">Add User</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- Create User Modal -->
+  <div id="createUserModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Create User</h2>
+      <div class="error-message" id="createUserError" style="color: red; display: none;"></div>
+      <form id="createUserForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br />
+        <br />
+        <button type="submit">Create</button>
+      </form>
+    </div>
+  </div>
+  <!-- Edit User Modal -->
+  <div id="editUserModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit User</h2>
+      <div class="error-message" id="editUserError" style="color: red; display: none;"></div>
+      <form id="editUserForm">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="name" required>
+        <br />
+        <br />
+        <label for="editEmail">Email:</label>
+        <input type="email" id="editEmail" name="email" required>
+        <br />
+        <br />
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

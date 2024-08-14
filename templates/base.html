@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="public/image/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="public/image/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/image/favicon-32x32.png">
+  <link rel="stylesheet" href="public/css/main.css">
+  <script src="public/js/main.js" defer></script>
+  <link rel="apple-touch-icon" href="public/image/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="public/image/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="public/image/android-chrome-512x512.png">
+  <!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <title>{% block title %}My Application{% endblock %}</title>
+</head>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>
